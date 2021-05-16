@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=DM+Serif+Display:ital@0;1&display=swap");
+@import "_variables";
+@import "_elements";
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.header__container {
+  font-family: "Cairo", sans-serif;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15%;
+  height: 1000vh;
+  .header__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .header__nav__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      span {
+        margin: 8em 0em;
+      }
+      h3 {
+        writing-mode: vertical-rl;
+        font-size: 1.4em;
+        font-weight: 400;
+      }
+    }
+  }
+  .header__nav__box:first-child {
+    background-color: #5ea3ec;
+    height: 100vh;
+  }
+  .header__nav__box:nth-child(2) {
+    background-color: #f64444;
+    height: 100vh;
+  }
+  .header__nav__box:last-child {
+    background-color: #ffb400;
+    height: 100vh;
+  }
+}
+
+main {
+  height: 1000vh;
+}
+.main__first {
+  width: auto;
+  height: 100vh;
+  padding: 4em 3em;
+  .intro__container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .intro__box__logo {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: 0.1em solid black;
+    position: fixed;
+  }
+  .intro__box__text {
+    font-size: 5em;
+    margin-top: 2em;
+    width: 75%;
+    line-height: 1.1;
+    font-weight: 400;
+  }
+}
+
+.main__second {
+  width: auto;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1566954979172-eaba308acdf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80");
+  background-size: cover;
+  background-position: center;
+}

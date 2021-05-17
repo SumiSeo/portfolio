@@ -10,7 +10,7 @@
 
 .header__container {
   font-family: "Cairo", sans-serif;
-  background-color: red;
+
   position: fixed;
   top: 0;
   right: 0;
@@ -45,6 +45,34 @@
   .header__nav__box:last-child {
     background-color: #ffb400;
     height: 100vh;
+  }
+}
+.nav__box--1 {
+  transform: translateY(-90em);
+  animation: slidedown 2s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+.nav__box--2 {
+  transform: translateY(-90em);
+  animation: slidedown 2s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.nav__box--3 {
+  transform: translateY(-90em);
+  animation: slidedown 2s ease-in-out forwards;
+  animation-delay: 0.05s;
+}
+
+@keyframes slidedown {
+  50% {
+    transform: translateY(-45em);
+  }
+  75% {transform: translateY(-15em);
+  }
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 

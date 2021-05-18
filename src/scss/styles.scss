@@ -108,6 +108,7 @@ main {
   background-image: url("https://images.unsplash.com/photo-1566954979172-eaba308acdf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80");
   background-size: cover;
   background-position: center;
+  transition: transform 1s, opacity 1s;
 }
 
 .main__third {
@@ -155,4 +156,11 @@ main {
     background-size: cover;
     background-position: center;
   }
+}
+
+.active {
+  // animation: fadeIn 4s ease-in-out;
+  opacity: 0;
+
+  transform: translateY(8rem);
 }

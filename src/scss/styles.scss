@@ -115,6 +115,7 @@ main {
   width: 85%;
   height: 100vh;
   padding: 4em 3em;
+
   .third__title {
     font-size: 6em;
     width: 60%;
@@ -139,22 +140,26 @@ main {
   display: flex;
   flex-direction: column;
   background-color: red;
+
   &:first-child {
     background-image: url("https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
     background-size: cover;
     background-position: center;
+    transition: transform 1s, opacity 1s;
   }
 
   &:nth-child(2) {
     background-image: url("https://images.unsplash.com/photo-1589834390005-5d4fb9bf3d32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
     background-size: cover;
     background-position: center;
+    transition: transform 1s, opacity 1s;
   }
 
   &:nth-child(3) {
     background-image: url("https://images.unsplash.com/photo-1487798452839-c748a707a6b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
     background-size: cover;
     background-position: center;
+    transition: transform 1s, opacity 1s;
   }
 }
 
@@ -162,5 +167,10 @@ main {
   // animation: fadeIn 4s ease-in-out;
   opacity: 0;
 
+  transform: translateY(8rem);
+}
+
+.active2 {
+  opacity: 0;
   transform: translateY(8rem);
 }

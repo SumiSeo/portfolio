@@ -214,7 +214,7 @@ main {
 }
 .fifth__container {
   // max-width: 60%;
-  width: 80%;
+  width: 95%;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -222,14 +222,19 @@ main {
 }
 
 .main__slides {
-  width: 80%;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   overflow: hidden;
   position: relative;
+  transition: transform 1s, opacity 2s;
 }
 
+.main__slides--active {
+  transform: translateY(8em);
+  opacity: 0;
+}
 .main__slide {
   position: absolute;
   // max-width: 100%;
@@ -271,8 +276,8 @@ main {
 }
 
 .btn {
-  width: 2.5em;
-  height: 2.5em;
+  width: 2em;
+  height: 2em;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   border: none;

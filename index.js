@@ -133,6 +133,24 @@ thirdBox.forEach(function(box){
 });
 
 
+const displaySlide = function(entries,observer){
+    const [entry] = entries;
+    if(!entry.isIntersecting) return;
+    else {
+        slider.classList.remove("main__slides--active");
+    }
+
+    };
+
+
+
+const observerSlide = new IntersectionObserver(displaySlide, {
+    root:null,
+    threshold:0,
+})
+
+observerSlide.observe(slider)
+
 ////const allSections = document.querySelectorAll(".section")
 
 // const revealSection = function(entries, observer){
@@ -188,7 +206,7 @@ const goToSlide = function(slid){
       });
 };
 
-goToSlide(0);
+
 
 let curSlide = 0;
 const maxSlide = slide.length;
@@ -243,12 +261,7 @@ if (curSlide === maxSlide-1){
   goToSlide(curSlide);
   activateDot(curSlide);}
 
-
-
-
-
 })
-
 
 
 
@@ -261,11 +274,11 @@ const createDots = function(){
 
 }
 
-createDots();
 const activateDot = function(slide){
     document.querySelectorAll(".dots__dot").forEach(dot => dot.classList.remove("dots__dot--active"));
     document.querySelector(`.dots__dot[data-slide="${slide}"]`).classList.add("dots__dot--active");
 };
+
 
 
 
@@ -279,5 +292,13 @@ dotContainer.addEventListener("click", function(e){
     }
     //0,1,2,3
 })
+
+
+const init = function(){
+    createDots();
+    activateDot(0);
+goToSlide(0);
+}
+init();
 
 

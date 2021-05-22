@@ -117,6 +117,7 @@ main {
   padding: 4em 3em;
 
   .third__title {
+    font-style: oblique;
     font-size: 6em;
     width: 60%;
     text-transform: uppercase;
@@ -192,10 +193,13 @@ main {
   align-items: center;
   h2 {
     font-size: 3em;
+    font-weight: 600;
   }
   h1 {
     font-size: 6em;
     margin: 0em 1em;
+    font-style: italic;
+    font-weight: 540;
   }
 }
 
@@ -328,4 +332,32 @@ main {
   opacity: 1;
   border: none;
   border-radius: 50%;
+}
+
+.main__sixth {
+  width: 85%;
+  height: 100vh;
+  margin-top: 2em;
+  padding: 4em 3em;
+}
+
+.sixth__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.six__box {
+  width: 32em;
+  border: 0.05em solid black;
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 50px;
+    width: 60%;
+    text-align: center;
+    font-style: italic;
+  }
 }

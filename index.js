@@ -16,6 +16,8 @@ const slide = document.querySelectorAll(".main__slide");
 const btnRight = document.querySelector(".btn__right");
 const btnLeft = document.querySelector(".btn__left");
 const dotContainer = document.querySelector(".dots");
+const sixthBoxAddress =document.querySelector(".six_box-address");
+const sixthBoxModal = document.querySelector(".sixth__modal");
 
 
 btnFood.addEventListener("click", function(){
@@ -302,3 +304,29 @@ goToSlide(0);
 init();
 
 
+
+
+const map = L.map('six__map').setView([40.7189145, -74.0011228], 20);
+
+L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([40.7189145, -74.0011228]).addTo(map)
+    .bindPopup(L.popup({maxWidth: 250, minWidth:100, autoClose:false, className: 'customPopup'}))
+    .setPopupContent('Canal Street Market')
+    .openPopup();
+
+
+    // L.marker(workout.coords)
+    // .addTo(this.#map)
+    // .bindPopup(L.popup({
+    //     maxWidth : 250, minWidth:100, autoClose:false, closeOnClick: false, className:`${workout.type}-popup`}))
+    // .setPopupContent(`${workout.type === 'running' ? '🏃' : '🚴‍♀️'}${workout.description}`)
+    // .openPopup();
+
+
+
+    sixthBoxAddress.addEventListener("click", function(){
+        sixthBoxModal.style.opacity = 1;
+    })

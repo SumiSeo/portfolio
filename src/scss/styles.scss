@@ -337,19 +337,21 @@ main {
 .main__sixth {
   width: 85%;
   height: 100vh;
-  margin-top: 2em;
+  margin-top: 4rem;
   padding: 4em 3em;
 }
 
 .sixth__container {
-  display: flex;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20rem;
+
   justify-content: space-between;
 }
 
 .six__box {
-  width: 32em;
   border: 0.05em solid black;
-  height: 20em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,5 +361,41 @@ main {
     width: 60%;
     text-align: center;
     font-style: italic;
+  }
+}
+
+.customPopup {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.sixth__modal {
+  opacity: 0;
+  display: flex;
+  justify-self: center;
+  width: 30rem;
+  height: 30rem;
+  background-color: white;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.modal__modal {
+  width: 20rem;
+  height: 20rem;
+  border: 0.05rem solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 1.4rem;
   }
 }

@@ -18,6 +18,7 @@ const btnLeft = document.querySelector(".btn__left");
 const dotContainer = document.querySelector(".dots");
 const sixthBoxAddress =document.querySelector(".six_box-address");
 const sixthBoxModal = document.querySelector(".sixth__modal");
+const sixthModalClose = document.querySelector(".sixth__modal--x");
 
 
 btnFood.addEventListener("click", function(){
@@ -43,24 +44,19 @@ btnRetail.addEventListener("click", function(){
 
 const displaySection2 = function(entries,observer){
     const [entry] = entries;
-    console.log(entry)
-   
     if(!entry.isIntersecting) return;
-   else {
+    else {
        section2.classList.remove("active");
-
-   }
- 
+    }
     observer.unobserve(section2);
-   
-    
-}
+};
+
 const observerMainSecond = new IntersectionObserver(displaySection2 , {
     root: null,
     threshold:0.15,
 })
 
-observerMainSecond.observe(section2)
+observerMainSecond.observe(section2);
 
 // nav.addEventListener("mouseover", function(e){
 //     const link = e.target;
@@ -121,7 +117,6 @@ const displaySection3 = function(entries, observer){
     allboxes.forEach(function(box){
         box.classList.remove("active2")
     })
-   
 }};
 
 const observerMainThird = new IntersectionObserver(displaySection3, {
@@ -246,7 +241,7 @@ const prevSlide = function(e){
   btnLeft.addEventListener("click", prevSlide);
 
 
-  document.addEventListener("keydown", function(e){
+document.addEventListener("keydown", function(e){
       if (e.key ==='ArrowLeft') {
         if (curSlide === 0){
             curSlide = maxSlide-1;}
@@ -328,5 +323,16 @@ L.marker([40.7189145, -74.0011228]).addTo(map)
 
 
     sixthBoxAddress.addEventListener("click", function(){
-        sixthBoxModal.style.opacity = 1;
+        sixthBoxModal.classList.remove("hidden__modal");
+    })
+
+
+    sixthModalClose.addEventListener("click", function(){
+        sixthBoxModal.classList.add("hidden__modal");
+    })
+
+    document.addEventListener("keydown",function(e){
+        if(e.key==="Escape") {
+            sixthBoxModal.style.opacity = 0;
+        }
     })

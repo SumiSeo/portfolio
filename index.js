@@ -25,13 +25,6 @@ btnFood.addEventListener("click", function(){
     section5.scrollIntoView({behavior:'smooth'});
 })
 
-
-
-
-
-
-
-
 btnCommunity.addEventListener("click", function(){
     section3.scrollIntoView({behavior:'smooth'});
 });
@@ -268,7 +261,6 @@ const createDots = function(){
     slide.forEach(function(s,i){
         dotContainer.insertAdjacentHTML("beforeend", `<button class="dots__dot" data-slide="${i}"></button>`)
     })
-
 }
 
 const activateDot = function(slide){
@@ -281,14 +273,12 @@ const activateDot = function(slide){
 
 dotContainer.addEventListener("click", function(e){
     if(e.target.classList.contains("dots__dot"))
-    {//0,1,2,3
-        const slide = e.target.dataset.slide;
+    {   const slide = e.target.dataset.slide;
         console.log(slide);
         goToSlide(slide);
         activateDot(slide);
     }
-    //0,1,2,3
-})
+});
 
 
 const init = function(){

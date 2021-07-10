@@ -204,6 +204,7 @@ main {
 
 .fourth__container {
   margin-top: 4rem;
+  padding: 4rem 3rem;
   width: 85%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -229,7 +230,7 @@ main {
 .main__fifth {
   width: 85%;
   height: 100vh;
-  padding: 2rem 3rem;
+  padding: 4rem 3rem;
   display: flex;
   flex-direction: center;
   justify-content: center;
@@ -299,15 +300,15 @@ main {
 }
 
 .btn {
-  width: 2em;
-  height: 2em;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   border: none;
   cursor: pointer;
   opacity: 0.5;
   color: black;
-  font-size: 1em;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -357,11 +358,12 @@ main {
   width: 85%;
   height: 70vh;
   margin-top: 4rem;
-  padding: 4em 3em;
+  padding: 4rem 3rem;
 }
 
 .sixth__container {
   display: grid;
+  padding: 4rem 3rem;
   gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 20rem;
@@ -437,7 +439,7 @@ main {
 .main__seventh {
   width: 85%;
   height: 50vh;
-  padding: 4em 3em;
+  padding: 4rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -479,7 +481,7 @@ main {
 .footer {
   width: 85%;
   height: 70vh;
-  padding: 2.4rem 2rem;
+  padding: 4rem 3rem;
 }
 
 .footer__container {
@@ -540,7 +542,7 @@ main {
   margin-top: 2.5rem;
   padding: 3rem 0;
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-columns: 3fr 2fr 1fr;
   .footer__box--copy {
     width: 80%;
     line-height: 1.2;
@@ -548,6 +550,7 @@ main {
   span {
     font-size: 0.9rem;
   }
+
   span:nth-child(2),
   span:nth-child(3) {
     text-decoration: underline;

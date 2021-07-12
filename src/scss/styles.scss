@@ -120,11 +120,68 @@ main {
 .main__second {
   width: 85%;
   height: 100vh;
-  background-color: black;
+  padding: 4rem 3rem;
+  border-top: 1px solid black;
   background-size: cover;
   background-position: center;
   transition: transform 1s, opacity 1s;
-  color: white;
+  position: relative;
+  .main__polygon {
+    position: absolute;
+    top: -10px;
+    left: 120px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+  .main__text h1 {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+.traces__container {
+  margin-left: 1rem;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+  grid-auto-rows: 1fr;
+}
+
+.traces__circle {
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.traces__box {
+  position: relative;
+  .traces__line {
+    position: absolute;
+    top: 14px;
+    left: 7px;
+    height: 5rem;
+    width: 1px;
+    background-color: black;
+  }
+}
+.traces__box:nth-child(2),
+.traces__box:nth-child(3),
+.traces__box:nth-child(4),
+.traces__box:last-child {
+  margin-top: 5rem;
+}
+.traces__summary {
+  display: flex;
+  align-items: center;
+  h5 {
+    font-size: 1.2rem;
+    margin-right: 2rem;
+  }
+  span {
+    font-size: 0.9rem;
+  }
 }
 
 .main__third {
@@ -201,7 +258,7 @@ main {
   margin-top: 4rem;
   width: 85%;
   height: 70vh;
-  padding: 0 2rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: center;
 }

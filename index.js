@@ -1,8 +1,9 @@
 'use strict';
 
-const btnCommunity = document.querySelector(".nav__box--3");
-const btnRetail = document.querySelector(".nav__box--2");
-const btnFood = document.querySelector(".nav__box--1")
+const btnDevelopment = document.querySelector(".nav__box--3");
+const btnData = document.querySelector(".nav__box--2");
+const btnAbout = document.querySelector(".nav__box--1")
+const mainFirst = document.querySelector(".main__first");
 const section3 =document.querySelector(".main__third");
 const section2 =document.querySelector(".main__second");
 const section4 = document.querySelector(".main__fourth")
@@ -21,15 +22,15 @@ const sixthBoxModal = document.querySelector(".sixth__modal");
 const sixthModalClose = document.querySelector(".sixth__modal--x");
 
 
-btnFood.addEventListener("click", function(){
-    section5.scrollIntoView({behavior:'smooth'});
+btnAbout.addEventListener("click", function(){
+    mainFirst.scrollIntoView({behavior:'smooth'});
 })
 
-btnCommunity.addEventListener("click", function(){
+btnDevelopment.addEventListener("click", function(){
     section3.scrollIntoView({behavior:'smooth'});
 });
 
-btnRetail.addEventListener("click", function(){
+btnData.addEventListener("click", function(){
     section4.scrollIntoView({behavior:'smooth'});
     
 })

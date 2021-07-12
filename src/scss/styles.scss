@@ -153,6 +153,10 @@ main {
     line-height: 1.7;
     letter-spacing: 0.1em;
   }
+  span {
+    font-style: italic;
+    font-weight: 300;
+  }
 }
 .third__box {
   display: flex;
@@ -194,7 +198,7 @@ main {
 }
 
 .main__fourth {
-  margin-top: 3rem 0;
+  margin-top: 4rem;
   width: 85%;
   height: 70vh;
   padding: 0 2rem;
@@ -513,6 +517,11 @@ main {
     text-align: center;
 
     line-height: 1.4;
+    a:link,
+    a:visited {
+      color: black;
+      text-decoration: none;
+    }
   }
 }
 

@@ -53,16 +53,21 @@ body {
     }
   }
   .header__nav__box:first-child {
-    background-color: #5ea3ec;
+    // background-color: #5ea3ec;
     height: 100vh;
+
+    background-color: #ffb142;
   }
   .header__nav__box:nth-child(2) {
-    background-color: #f64444;
+    // background-color: #f64444;
+    background-color: #227093;
     height: 100vh;
   }
   .header__nav__box:last-child {
-    background-color: #ffb400;
+    // background-color: #ffb400;
     height: 100vh;
+    background-color: #1e272e;
+    background-color: #b33939;
   }
 }
 .nav__box--1 {
@@ -113,9 +118,9 @@ body {
     border-radius: 50%;
     border: 0.1rem solid black;
     position: fixed;
-
     z-index: 100;
     margin-bottom: 1rem;
+    display: none;
   }
   .intro__box__text {
     font-size: 3.7rem;

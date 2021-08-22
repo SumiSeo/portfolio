@@ -260,14 +260,14 @@ body {
   display: flex;
   flex-direction: column;
   &:first-child {
-    background-image: url("https://images.unsplash.com/photo-1503198515498-d0bd9ed16902?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+    background-image: url("https://media.vlpt.us/images/chaton/post/d77d9675-0244-486e-bb27-25c50f56c387/Hnet-image%20(2).gif");
     background-size: cover;
     background-position: center;
     transition: transform 1s, opacity 1s;
   }
 
   &:nth-child(2) {
-    background-image: url("../img/stocker-2.gif");
+    background-image: url("./img/stocker-2.gif");
     background-size: cover;
     background-position: center;
     transition: transform 1s, opacity 1s;
@@ -276,7 +276,7 @@ body {
   }
 
   &:nth-child(3) {
-    background-image: url("../img/test.jpeg");
+    background-image: url("./img/test.jpeg");
     background-size: cover;
     background-position: center;
     transition: transform 1s, opacity 1s;
@@ -434,7 +434,7 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 3570px;
+  top: 3200px;
 }
 
 .dots__dot {

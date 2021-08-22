@@ -178,7 +178,7 @@ body {
 }
 .traces__infos {
   margin-bottom: 2.3rem;
-  width: 85%;
+  width: 90%;
 }
 
 .traces__circle {
@@ -267,12 +267,10 @@ body {
   }
 
   &:nth-child(2) {
-    background-image: url("./img/stocker-2.gif");
+    background-image: url("https://media.vlpt.us/images/chaton/post/b5411e48-f90e-4811-acbd-01aaedb70eb7/Hnet-image%20(6).gif");
     background-size: cover;
     background-position: center;
     transition: transform 1s, opacity 1s;
-    width: 300px;
-    height: 400px;
   }
 
   &:nth-child(3) {

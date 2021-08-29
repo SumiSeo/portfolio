@@ -274,12 +274,10 @@ body {
   }
 
   &:nth-child(3) {
-    background-image: url("./img/test.jpeg");
+    background-image: url("https://media.vlpt.us/images/chaton/post/cbab65c8-e674-497d-ae99-78b60aa22488/Hnet-image%20(9).gif");
     background-size: cover;
     background-position: center;
     transition: transform 1s, opacity 1s;
-    width: 300px;
-    height: 400px;
   }
 }
 
@@ -371,7 +369,7 @@ body {
 .slide--1 {
   width: 100%;
   height: 80vh;
-  background-image: url("https://images.unsplash.com/photo-1558473432-44de272549cf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80");
+  background-image: url("../img/talky.png");
   background-position: center;
   background-size: cover;
   position: relative;

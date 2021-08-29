@@ -31,7 +31,7 @@ btnDevelopment.addEventListener("click", function(){
 });
 
 btnData.addEventListener("click", function(){
-    section4.scrollIntoView({behavior:'smooth'});
+    section2.scrollIntoView({behavior:'smooth'});
     
 })
 

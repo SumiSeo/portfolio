@@ -148,7 +148,9 @@ body {
 .main__second {
   width: 85%;
   height: 100vh;
-  padding: 4rem 3rem;
+  padding: 0 3rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
   border-top: 1px solid black;
   background-size: cover;
   background-position: center;
@@ -294,17 +296,16 @@ body {
 }
 
 .main__fourth {
-  margin-top: 4rem;
   width: 85%;
-  height: 70vh;
+  height: 50vh;
   padding: 0 1rem;
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .fourth__container {
-  margin-top: 4rem;
-  padding: 3rem 3rem;
+  padding: 1rem 3rem;
   width: 85%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -330,7 +331,6 @@ body {
 .main__fifth {
   width: 85%;
   height: 100vh;
-  padding: 4rem 3rem;
   display: flex;
   flex-direction: center;
   justify-content: center;

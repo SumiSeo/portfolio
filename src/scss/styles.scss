@@ -45,6 +45,7 @@ main {
         }
       }
       h3 {
+        cursor: pointer;
         writing-mode: vertical-rl;
         font-size: 1.4rem;
         font-weight: 400;
@@ -255,7 +256,7 @@ main {
 }
 
 .main__fifth {
-  width: 85%;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: center;
@@ -328,7 +329,7 @@ main {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   border: none;
   cursor: pointer;
   opacity: 0.5;
@@ -342,13 +343,13 @@ main {
 .btn__right {
   position: absolute;
   z-index: 50;
-  right: 350px;
+  right: 150px;
 }
 
 .btn__left {
   position: absolute;
   z-index: 50;
-  left: 150px;
+  left: 350px;
 }
 
 .main__sixth {
@@ -440,12 +441,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   h1 {
     font-size: 3rem;
     font-style: italic;
     span {
-      // padding-bottom: 0.1rem;
       border-bottom: 0.05rem solid black;
     }
   }
@@ -458,7 +457,7 @@ main {
 }
 .incoming__button {
   margin-top: 4rem;
-  padding: 1rem 3.5rem;
+  padding: 1rem 3rem;
   background-color: white;
   border: 0.05rem solid black;
   cursor: pointer;
@@ -476,9 +475,10 @@ main {
 }
 
 .footer {
-  width: 85%;
+  width: 80%;
   height: 70vh;
   padding: 4rem 3rem;
+  margin-left: 15rem;
 }
 
 .footer__container {
@@ -489,9 +489,9 @@ main {
 .footer__box--1 {
   margin-top: 2rem;
   display: grid;
-  gap: 3rem;
+  gap: 5rem;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 15rem;
+  grid-auto-rows: 13rem;
 }
 
 .footer__sns {
@@ -541,10 +541,10 @@ main {
   }
 }
 .footer__box--3 {
-  margin-top: 2.5rem;
-  padding: 3rem 0;
+  margin-top: 5rem;
+  padding: 2rem 0;
   display: grid;
-  grid-template-columns: 3fr 2fr 1fr;
+  grid-template-columns: 4fr 2fr 1fr;
   grid-auto-rows: 50px;
   .footer__box--copy {
     width: 80%;

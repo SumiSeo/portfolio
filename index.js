@@ -25,7 +25,7 @@ btnAbout.addEventListener("click", function () {
 });
 
 btnDevelopment.addEventListener("click", function () {
-  section3.scrollIntoView({ behavior: "smooth" });
+  section5.scrollIntoView({ behavior: "smooth" });
 });
 
 btnData.addEventListener("click", function () {

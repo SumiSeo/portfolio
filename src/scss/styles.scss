@@ -529,10 +529,9 @@ main {
   margin-top: 5rem;
   padding: 2rem 0;
   display: grid;
-  grid-template-columns: 4fr 2fr 1fr;
-  grid-auto-rows: 50px;
+  grid-template-columns: 2fr 1fr 1fr 1fr 0.4fr;
+  position: relative;
   .footer__box--copy {
-    width: 80%;
     line-height: 1.2;
   }
   span {
@@ -544,6 +543,7 @@ main {
     text-decoration: underline;
     text-underline-position: under;
   }
+
   span:last-child span {
     text-decoration: line-through;
   }

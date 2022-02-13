@@ -465,7 +465,7 @@ main {
   width: 80%;
   height: 70vh;
   padding: 4rem 3rem;
-  margin-left: 15rem;
+  margin-left: 17rem;
 }
 
 .footer__container {
@@ -531,7 +531,7 @@ main {
   margin-top: 5rem;
   padding: 2rem 0;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 0.4fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   position: relative;
   .footer__box--copy {
     line-height: 1.2;
@@ -546,7 +546,9 @@ main {
     text-underline-position: under;
   }
 
-  span:last-child span {
+  span:last-child {
     text-decoration: line-through;
+    text-decoration: underline;
+    text-underline-position: under;
   }
 }

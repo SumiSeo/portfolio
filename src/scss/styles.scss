@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  margin-left: 13rem;
+  margin-left: 15rem;
 }
 .header__container {
   font-family: "Cairo", sans-serif;
@@ -29,6 +29,7 @@ main {
   left: 0;
   width: 15%;
   height: 700vh;
+
   .header__nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
